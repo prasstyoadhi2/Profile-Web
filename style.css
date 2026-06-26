@@ -129,15 +129,6 @@ section {
     justify-content: flex-end;
 }
 
-.hero-right img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 12px;
-    filter: grayscale(100%) contrast(1.1) brightness(0.9);
-    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-}
-
 .hero-right img:hover {
     filter: grayscale(0%) contrast(1) brightness(1);
     transform: scale(1.03) translateY(-10px);
