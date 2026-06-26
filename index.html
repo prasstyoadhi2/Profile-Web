@@ -127,7 +127,7 @@
     <section class="semantic-section reveal" id="semantic">
         <div class="section-header">
             <h2>Semantic Model.</h2>
-            <p>Disconnected Entities Implementation</p>
+            <p>Knowledge Graph & JSON-LD Implementation</p>
         </div>
         
         <div class="semantic-graph" style="margin-bottom: 80px;">
@@ -135,21 +135,37 @@
                 <strong>Prasstyo Adhi P.</strong>
                 <span>@type: Person</span>
             </div>
-            <div class="node">
-                <strong>Univ. Halu Oleo</strong>
-                <span>@type: CollegeOrUniversity</span>
-            </div>
-            <div class="node">
-                <strong>HMPS Ilmu Komputer</strong>
-                <span>@type: Organization</span>
-            </div>
-            <div class="node">
-                <strong>Skills</strong>
-                <span>@type: DefinedTerm</span>
-            </div>
-            <div class="node">
-                <strong>CanvasGear</strong>
-                <span>@type: CreativeWork</span>
+            
+            <div class="relations">
+                <div class="relation-path">
+                    <span class="predicate">alumniOf</span>
+                    <div class="node">
+                        <strong>Univ. Halu Oleo</strong>
+                        <span>@type: CollegeOrUniversity</span>
+                    </div>
+                </div>
+                <div class="relation-path">
+                    <span class="predicate">memberOf</span>
+                    <div class="node">
+                        <strong>HMPS Ilmu Komputer</strong>
+                        <span>@type: Organization</span>
+                    </div>
+                </div>
+                <div class="relation-path">
+                    <span class="predicate">knowsAbout</span>
+                    <div class="node">
+                        <strong>Illustration & 3D & UI/UX Design</strong>
+                        <span>@type: DefinedTerm</span>
+                    </div>
+                </div>
+                    <div class="relation-path">
+                    <span class="predicate">creatorOf</span>
+                    <div class="node">
+                        <strong>CanvasGear</strong>
+                        <span>@type: Project</span>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
 
