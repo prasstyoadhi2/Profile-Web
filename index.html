@@ -124,10 +124,10 @@
         </div>
     </section>
 
-   <section class="semantic-section reveal" id="semantic">
+    <section class="semantic-section reveal" id="semantic">
         <div class="section-header">
             <h2>Semantic Model.</h2>
-            <p>Knowledge Graph & JSON-LD Implementation</p>
+            <p>Disconnected Entities Implementation</p>
         </div>
         
         <div class="semantic-graph" style="margin-bottom: 80px;">
@@ -135,43 +135,28 @@
                 <strong>Prasstyo Adhi P.</strong>
                 <span>@type: Person</span>
             </div>
-            
-            <div class="relations">
-                <div class="relation-path">
-                    <span class="predicate">alumniOf</span>
-                    <div class="node">
-                        <strong>Univ. Halu Oleo</strong>
-                        <span>@type: CollegeOrUniversity</span>
-                    </div>
-                </div>
-                <div class="relation-path">
-                    <span class="predicate">memberOf</span>
-                    <div class="node">
-                        <strong>HMPS Ilmu Komputer</strong>
-                        <span>@type: Organization</span>
-                    </div>
-                </div>
-                <div class="relation-path">
-                    <span class="predicate">knowsAbout</span>
-                    <div class="node">
-                        <strong>Illustration & 3D & UI/UX Design</strong>
-                        <span>@type: DefinedTerm</span>
-                    </div>
-                </div>
-                <div class="relation-path">
-                    <span class="predicate">subjectOf</span>
-                    <div class="node">
-                        <strong>CanvasGear</strong>
-                        <span>@type: CreativeWork</span>
-                    </div>
-                </div>
+            <div class="node">
+                <strong>Univ. Halu Oleo</strong>
+                <span>@type: CollegeOrUniversity</span>
+            </div>
+            <div class="node">
+                <strong>HMPS Ilmu Komputer</strong>
+                <span>@type: Organization</span>
+            </div>
+            <div class="node">
+                <strong>Skills</strong>
+                <span>@type: DefinedTerm</span>
+            </div>
+            <div class="node">
+                <strong>CanvasGear</strong>
+                <span>@type: CreativeWork</span>
             </div>
         </div>
 
         <div class="dev-project" style="display: block;">
             <div class="project-details" style="width: 100%;">
                 <h4 style="font-size: 1.5rem; margin-bottom: 10px;">JSON-LD Source Code</h4>
-                <p style="margin-bottom: 25px;">Implementasi metadata terstruktur yang ditanamkan secara langsung (embedded) di dalam dokumen HTML ini.</p>
+                <p style="margin-bottom: 25px;">Implementasi metadata terstruktur yang ditanamkan dalam bentuk array flat terpisah.</p>
                 
                 <div style="background: #0a0a0a; padding: 25px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); overflow-x: auto; box-shadow: inset 0 0 10px rgba(0,0,0,0.5);">
 <pre><code style="color: #abb2bf; font-family: 'Courier New', Courier, monospace; font-size: 14px; line-height: 1.6;">[
