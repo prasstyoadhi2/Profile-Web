@@ -34,7 +34,8 @@
             <div class="about-info reveal">
                 <h2>About.</h2>
                 <ul class="info-list">
-                    <li><span>NIM</span> F1G123032</li> <li><span>Program Studi</span> Ilmu Komputer</li>
+                    <li><span>NIM</span> F1G12032</li>
+                    <li><span>Program Studi</span> Ilmu Komputer</li>
                     <li><span>Email</span> prasstyoadhi00@gmail.com</li>
                     <li><span>Organisasi</span> Himpunan Mahasiswa Program Studi Ilmu Komputer</li>
                 </ul>
@@ -72,8 +73,6 @@
                         <div class="skill-label"><span>Programming</span><span>65%</span></div>
                         <div class="progress-bar"><div class="progress" style="--target: 65%;"></div></div>
                     </div>
-                
-                </div>
                 </div>
             </div>
         </div>
@@ -128,7 +127,7 @@
     <section class="semantic-section reveal" id="semantic">
         <div class="section-header">
             <h2>Semantic Model.</h2>
-            <p>Knowledge Graph & JSON-LD Implementation</p>
+            <p>Disconnected Entities Implementation</p>
         </div>
         
         <div class="semantic-graph" style="margin-bottom: 80px;">
@@ -136,95 +135,64 @@
                 <strong>Prasstyo Adhi P.</strong>
                 <span>@type: Person</span>
             </div>
-            
-            <div class="relations">
-                <div class="relation-path">
-                    <span class="predicate">alumniOf</span>
-                    <div class="node">
-                        <strong>Univ. Halu Oleo</strong>
-                        <span>@type: CollegeOrUniversity</span>
-                    </div>
-                </div>
-                <div class="relation-path">
-                    <span class="predicate">memberOf</span>
-                    <div class="node">
-                        <strong>HMPS Ilmu Komputer</strong>
-                        <span>@type: Organization</span>
-                    </div>
-                </div>
-                <div class="relation-path">
-                    <span class="predicate">knowsAbout</span>
-                    <div class="node">
-                        <strong>Illustration & 3D & UI/UX Design</strong>
-                        <span>@type: DefinedTerm</span>
-                    </div>
-                </div>
-                    <div class="relation-path">
-                    <span class="predicate">creatorOf</span>
-                    <div class="node">
-                        <strong>CanvasGear</strong>
-                        <span>@type: Project</span>
-                    </div>
-                </div>
-                </div>
+            <div class="node">
+                <strong>Univ. Halu Oleo</strong>
+                <span>@type: CollegeOrUniversity</span>
+            </div>
+            <div class="node">
+                <strong>HMPS Ilmu Komputer</strong>
+                <span>@type: Organization</span>
+            </div>
+            <div class="node">
+                <strong>Skills</strong>
+                <span>@type: DefinedTerm</span>
+            </div>
+            <div class="node">
+                <strong>CanvasGear</strong>
+                <span>@type: CreativeWork</span>
             </div>
         </div>
 
         <div class="dev-project" style="display: block;">
             <div class="project-details" style="width: 100%;">
                 <h4 style="font-size: 1.5rem; margin-bottom: 10px;">JSON-LD Source Code</h4>
-                <p style="margin-bottom: 25px;">Implementasi metadata terstruktur yang tertanam secara langsung (embedded) di dalam dokumen HTML ini.</p>
+                <p style="margin-bottom: 25px;">Implementasi metadata terstruktur yang ditanamkan dalam bentuk array flat terpisah.</p>
                 
                 <div style="background: #0a0a0a; padding: 25px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); overflow-x: auto; box-shadow: inset 0 0 10px rgba(0,0,0,0.5);">
-<pre><code style="color: #abb2bf; font-family: 'Courier New', Courier, monospace; font-size: 14px; line-height: 1.6;">{
-  <span style="color:#c678dd;">"@context"</span>: <span style="color:#98c379;">"https://schema.org"</span>,
-  <span style="color:#c678dd;">"@graph"</span>: [
-    {
-      <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"Person"</span>,
-      <span style="color:#c678dd;">"@id"</span>: <span style="color:#98c379;">"https://prasstyo.example.com/#person"</span>,
-      <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Prasstyo Adhi Pangestu"</span>,
-      <span style="color:#c678dd;">"email"</span>: <span style="color:#98c379;">"prasstyoadhi00@gmail.com"</span>,
-      <span style="color:#c678dd;">"jobTitle"</span>: [
-        <span style="color:#98c379;">"Character Illustrator"</span>,
-        <span style="color:#98c379;">"3D Designer"</span>,
-        <span style="color:#98c379;">"UI/UX Designer"</span>
-      ],
-      <span style="color:#c678dd;">"alumniOf"</span>: {
-        <span style="color:#c678dd;">"@id"</span>: <span style="color:#98c379;">"https://prasstyo.example.com/#uho"</span>
-      },
-      <span style="color:#c678dd;">"memberOf"</span>: {
-        <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"Organization"</span>,
-        <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Himpunan Mahasiswa Program Studi Ilmu Komputer"</span>
-      },
-      <span style="color:#c678dd;">"knowsAbout"</span>: [
-        {
-          <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"DefinedTerm"</span>,
-          <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Character Illustration"</span>
-        },
-        {
-          <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"DefinedTerm"</span>,
-          <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"3D Design"</span>
-        }
-      ]
-    },
-    {
-      <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"CollegeOrUniversity"</span>,
-      <span style="color:#c678dd;">"@id"</span>: <span style="color:#98c379;">"https://prasstyo.example.com/#uho"</span>,
-      <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Universitas Halu Oleo"</span>,
-      <span style="color:#c678dd;">"department"</span>: {
-        <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"Organization"</span>,
-        <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Ilmu Komputer"</span>
-      }
-    },
-    {
-      <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"Project"</span>,
-      <span style="color:#c678dd;">"@id"</span>: <span style="color:#98c379;">"https://prasstyo.example.com/#canvasgear"</span>,
-      <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"CanvasGear"</span>,
-      <span style="color:#c678dd;">"description"</span>: <span style="color:#98c379;">"Website rekomendasi perangkat digital drawing."</span>
-    }
-  ]
-}
-</code></pre>
+<pre><code style="color: #abb2bf; font-family: 'Courier New', Courier, monospace; font-size: 14px; line-height: 1.6;">[
+  {
+    <span style="color:#c678dd;">"@context"</span>: <span style="color:#98c379;">"https://schema.org"</span>,
+    <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"Person"</span>,
+    <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Prasstyo Adhi Pangestu"</span>,
+    <span style="color:#c678dd;">"email"</span>: <span style="color:#98c379;">"prasstyoadhi00@gmail.com"</span>,
+    <span style="color:#c678dd;">"jobTitle"</span>: [
+      <span style="color:#98c379;">"Character Illustrator"</span>,
+      <span style="color:#98c379;">"3D Designer"</span>,
+      <span style="color:#98c379;">"UI/UX Designer"</span>
+    ]
+  },
+  {
+    <span style="color:#c678dd;">"@context"</span>: <span style="color:#98c379;">"https://schema.org"</span>,
+    <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"CollegeOrUniversity"</span>,
+    <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Universitas Halu Oleo"</span>
+  },
+  {
+    <span style="color:#c678dd;">"@context"</span>: <span style="color:#98c379;">"https://schema.org"</span>,
+    <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"Organization"</span>,
+    <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Himpunan Mahasiswa Program Studi Ilmu Komputer"</span>
+  },
+  {
+    <span style="color:#c678dd;">"@context"</span>: <span style="color:#98c379;">"https://schema.org"</span>,
+    <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"DefinedTerm"</span>,
+    <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"Character Illustration &amp; 3D Design"</span>
+  },
+  {
+    <span style="color:#c678dd;">"@context"</span>: <span style="color:#98c379;">"https://schema.org"</span>,
+    <span style="color:#c678dd;">"@type"</span>: <span style="color:#98c379;">"CreativeWork"</span>,
+    <span style="color:#c678dd;">"name"</span>: <span style="color:#98c379;">"CanvasGear"</span>,
+    <span style="color:#c678dd;">"description"</span>: <span style="color:#98c379;">"Website rekomendasi perangkat digital drawing."</span>
+  }
+]</code></pre>
                 </div>
             </div>
         </div>
@@ -239,47 +207,42 @@
         <p>© 2026 Prasstyo Adhi Pangestu. Semantic Web Final Project.</p>
     </footer>
 
-   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://prasstyo.example.com/#person",
-      "name": "Prasstyo Adhi Pangestu",
-      "email": "prasstyoadhi00@gmail.com",
-      "jobTitle": ["Character Illustrator", "3D Designer", "UI/UX Designer"],
-      "alumniOf": {
-        "@id": "https://prasstyo.example.com/#uho"
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Prasstyo Adhi Pangestu",
+        "email": "prasstyoadhi00@gmail.com",
+        "jobTitle": [
+          "Character Illustrator",
+          "3D Designer",
+          "UI/UX Designer"
+        ]
       },
-      "memberOf": {
+      {
+        "@context": "https://schema.org",
+        "@type": "CollegeOrUniversity",
+        "name": "Universitas Halu Oleo"
+      },
+      {
+        "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Himpunan Mahasiswa Program Studi Ilmu Komputer"
       },
-      "knowsAbout": [
-        { "@type": "DefinedTerm", "name": "Character Illustration" },
-        { "@type": "DefinedTerm", "name": "3D Design" }
-      ]
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "@id": "https://prasstyo.example.com/#uho",
-      "name": "Universitas Halu Oleo",
-      "department": {
-        "@type": "Organization",
-        "name": "Ilmu Komputer"
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "name": "Character Illustration & 3D Design"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "CanvasGear",
+        "description": "Website rekomendasi perangkat digital drawing."
       }
-    },
-    {
-    "@type": "Project",
-    "@id": "https://prasstyo.example.com/#canvasgear",
-    "name": "CanvasGear",
-    "description": "Website rekomendasi perangkat digital drawing.",
-    }
-  ]
-}
-
-</script>
+    ]
+    </script>
 
     <script src="script.js"></script>
 </body>
