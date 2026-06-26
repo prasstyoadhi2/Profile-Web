@@ -18,14 +18,25 @@
         </ul>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-left reveal">
-            <p class="small-title">Quick Introduction</p>
-            <h1>PRASSTYO<br>ADHI<br>PANGESTU</h1>
-            <p class="subtitle">Character Illustrator · 3D Designer · UI/UX Designer · Computer Science Student</p>
+    <section class="hero" id="home" style="display: flex; justify-content: space-between; align-items: center; padding: 0 8%;">
+    <!-- Sisi Kiri: Quick Introduction & Perkenalan Singkat -->
+    <div class="hero-left reveal" style="text-align: left; max-width: 45%; color: #888; line-height: 1.8;">
+        <p class="small-title">Quick Introduction</p>
+        <div class="quick-bio" style="margin-top: 20px;">
+            <p><strong>Hi</strong> Saya adalah mahasiswa dari Universitas Halu Oleo Kendari.</p>
+            <p>Website ini saya buat untuk profil diri Saya dan menunjukkan skill yang Saya miliki.</p>
         </div>
-    </section>
+        <p class="subtitle">Character Illustrator · 3D Designer · UI/UX Designer</p>
+        </div>
+    </div>
 
+    <!-- Sisi Kanan: Nama -->
+    <div class="hero-right reveal" style="text-align: right; max-width: 50%;">
+        <h1>PRASSTYO<br>ADHI<br>PANGESTU</h1>
+    </div>
+</section>
+
+        </div>
     <section class="about-section" id="about">
         <div class="about-container">
             <div class="about-info reveal">
@@ -135,7 +146,7 @@
             
             <div class="relations">
                 <div class="relation-path">
-                    <span class="predicate">alumniOf</span>
+                    <span class="predicate">affiliationOf</span>
                     <div class="node">
                         <strong>Univ. Halu Oleo</strong>
                         <span>@type: CollegeOrUniversity</span>
